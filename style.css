@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-family: Barlow Semi Condensed, sans-serif;
+    color: white;
+}
+.card{
+    box-sizing: border-box;
+    margin: 10px 30px 0 0 ;
+    padding: 40px 50px;
+    box-shadow: 0px 5px 35px 10px rgba(27, 68, 99, 0.2);
+    border-radius: 10px;
+}
+.cards-left{
+    display: grid;
+}
+.cards-right{
+    display: grid;
+}
+.cards-top{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    margin-bottom: 20px;
+}
+.cards-bottom{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+.graduate-name-img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+.graduate-name {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+.graduate-text-descr{
+    opacity: 70%;
+}
+/*BGs*/
+.cards-top .card-daniel{
+    background-image: url("bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position-x: 440px;
+    background-position-y: 10px;
+    background-size: 120px;
+}
+.card-daniel{
+    background-color: hsl(263, 55%, 52%);
+}
+
+.card-jonathan{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.card-jean{
+    background-color: white;
+}
+.card-jean .graduate-name, .card-jean .graduate-verif{
+    color: hsl(217, 19%, 35%);
+}
+.card-jean h2{
+    color: hsl(219, 29%, 14%);
+}
+.card-jean p{
+    color: hsl(217, 19%, 35%);
+}
+
+.card-patrick{
+    background-color: hsl(219, 29%, 14%);
+}
+
+.card-kira .graduate-name, .card-kira .graduate-verif{
+    color: hsl(217, 19%, 35%);
+}
+.card-kira h2{
+    color: hsl(219, 29%, 14%);
+}
+.card-kira p{
+    color: hsl(217, 19%, 35%);
+}
+/*fonts*/
+.graduate-name{
+    color: white;
+}
+.graduate-verif{
+    color: white;
+    opacity: 50%;
+}
+@media (max-width: 1200px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .container{
+        margin-left: 30px;
+    }
+    .graduate-text-title{
+        font-size: 18px;
+    }
+    .graduate-text-descr{
+        font-size: 13px;
+    }
+    .cards-top .card-daniel{
+        background-position-x: 320px;
+        background-position-y: 10px;
+        background-size: 80px;
+    }
+
+}
+@media (max-width: 860px ){
+    .cards-top{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 30px;
+        row-gap: 30px;
+    }
+    .cards-bottom{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .cards{
+        row-gap: 30px;
+    }
+    .cards-top .card-daniel{
+        background-position-x: 210px;
+        background-position-y: 10px;
+        background-size: 80px;
+    }
+
+}
